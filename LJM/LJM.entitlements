@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Sandbox. ScreenCaptureKit works inside the sandbox; the permission itself is the Screen Recording TCC prompt, not an entitlement. -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<!-- Read/write ~/Movies so the default folder ~/Movies/LJM can be created. This is the key Xcode writes for the Movies Folder capability. -->
+	<key>com.apple.security.assets.movies.read-write</key>
+	<true/>
+	<!-- NSOpenPanel folder chosen in Settings. -->
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<!-- Persist that folder across launches. -->
+	<key>com.apple.security.files.bookmarks.app-scope</key>
+	<true/>
+	<!-- Requested only when the user turns the microphone on, never at launch. -->
+	<key>com.apple.security.device.audio-input</key>
+	<true/>
+	<!-- Requested only when the user turns the camera on, never at launch. -->
+	<key>com.apple.security.device.camera</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+# macOS / Swift build artifacts — do not commit compiled apps or recordings
+build/
+.build/
+*.app
+*.bak*
+.DS_Store
+._*
+test-output/
+*.mov
+*.mp4
+*.partial.mp4
+main
+xcuserdata/
+DerivedData/
+*.xcuserstate
+.idea/
+.vscode/
